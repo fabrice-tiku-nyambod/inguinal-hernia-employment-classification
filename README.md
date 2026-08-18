@@ -19,7 +19,9 @@ Nothing in this repository will reproduce without that licensed extract.
 
 ## Running the pipeline
 
-Set `DATA_DIR` in `code/01_config.R` to the directory holding the SAS files, then:
+Point the pipeline at the licensed SAS extract, either by setting the
+`MARKETSCAN_DIR` environment variable or by editing the fallback path in
+`code/01_config.R`. Then:
 
 ```
 cd code
@@ -31,7 +33,7 @@ Expect a few minutes for `03`; the rest are fast.
 
 | Script | Purpose |
 |---|---|
-| `01_config.R` | Paths, code sets, deflators, label lookups. **The only file to edit.** |
+| `01_config.R` | Data path, code sets, CPI deflators, label lookups. The only file that needs changing, and only if you are not setting `MARKETSCAN_DIR`. |
 | `03_build_cohort.R` | Raw SAS claim lines to the reconciled cohort, 130,033 patients |
 | `04_job_class.R` | Exposure derivation, primary models, subgroups, cost sharing |
 | `05_manuscript_tables.R` | Formatted tables |

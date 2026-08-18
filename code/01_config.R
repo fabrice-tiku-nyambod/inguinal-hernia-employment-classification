@@ -1,4 +1,5 @@
-# 01_config.R -- paths and constants. EDIT DATA_DIR ONLY.
+# 01_config.R -- paths and constants. The only settable value is the data
+# directory, via the MARKETSCAN_DIR environment variable or the fallback below.
 #
 # DATA_DIR must contain the MarketScan SAS files:
 #   fabrice_o_YYYY.sas7bdat, fabrice_s_YYYY.sas7bdat,

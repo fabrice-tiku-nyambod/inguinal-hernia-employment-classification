@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# Licensed data. NEVER COMMIT.
+# ---------------------------------------------------------------------------
+# The Merative MarketScan Commercial Claims and Encounters Database is
+# proprietary and licensed. Patient-level data may not be redistributed. The
+# analytic cohort files are patient-level and must stay off this repository.
+*.sas7bdat
+*.rds
+*.rda
+*.RData
+.Rhistory
+output/
+data/
+
+# ---------------------------------------------------------------------------
+# Manuscript and submission material. Not published here.
+# ---------------------------------------------------------------------------
+manuscript/
+submission*/
+*.docx
+*.pdf
+*.tiff
+*.tif
+
+# ---------------------------------------------------------------------------
+# Editor, OS, and R session noise
+# ---------------------------------------------------------------------------
+.Rproj.user/
+*.Rproj
+.Renviron
+.env
+~$*
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Internal working documents. Hold the full unpublished result set and local
+# paths; not for a public repository.
+# ---------------------------------------------------------------------------
+START_HERE.md
+MARKETSCAN_CAVEATS.md
